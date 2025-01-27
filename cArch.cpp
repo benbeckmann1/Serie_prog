@@ -1,4 +1,4 @@
-#include "StdAfxRegArchLib.h"
+0#include "StdAfxRegArchLib.h"
 
 /*!
 	\file cArch.cpp
@@ -230,7 +230,7 @@ namespace RegArchLib {
         }
         for(uint i = 0 ; i < MIN(theDate, mvArch.GetSize()); i++)
         {
-            theGradData.mCurrentGradVar -= 2.0 * mvArch[i - 1] * theValue.mUt[theDate - i - 1] * theGradData.mGradMt[i - 1] ;
+            theGradData.mCurrentGradVar -= 2.0 * mvArch[i] * theValue.mUt[theDate - i - 1] * theGradData.mGradMt[i - 1] ;
         }
 
 
